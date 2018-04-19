@@ -58,14 +58,14 @@ function runCode(command) {
           // Parse the body of the site and recover just the imdbRating
           // (Note: The syntax below for parsing isn't obvious. Just spend a few moments dissecting it).
           console.log();
-          console.log(" Title: " + JSON.parse(body).Title);
-          console.log(" Year: " + JSON.parse(body).Year);
-          console.log(" Rating: " + JSON.parse(body).imdbRating);
-          console.log(" Rotten Tomatoes: " + JSON.parse(body).Ratings[1].Value);
-          console.log(" Country/Countries: " + JSON.parse(body).Country);
-          console.log(" Language(s): " + JSON.parse(body).Language);
-          console.log(" Plot: " + JSON.parse(body).Plot);
-          console.log(" Actors: " + JSON.parse(body).Actors);
+          console.log(" Title:             " + JSON.parse(body).Title);
+          console.log(" Year:              " + JSON.parse(body).Year);
+          console.log(" Rating:            " + JSON.parse(body).imdbRating);
+          console.log(" Rotten Tomatoes:   " + JSON.parse(body).Ratings[1].Value);
+          console.log(" Country:           " + JSON.parse(body).Country);
+          console.log(" Language(s):       " + JSON.parse(body).Language);
+          console.log(" Actors:            " + JSON.parse(body).Actors);          
+          console.log(" Plot:              " + JSON.parse(body).Plot);
         }
       });
       break;
